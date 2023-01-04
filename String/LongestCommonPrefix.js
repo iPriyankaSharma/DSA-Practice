@@ -21,7 +21,7 @@ let longestCommon = function (str) {
   if (!str.length) return "";
 
   for (let i = 0; i <= str[0].length; i++) {
-    if (!str.every((string) => str[i] == str[o][i])) {
+    if (!str.every((string) => str[i] == str[0][i])) {
       return str[0].slice(0, i);
     }
   }
